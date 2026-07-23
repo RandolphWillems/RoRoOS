@@ -8,7 +8,7 @@
 
 *{box-sizing:border-box}
 html,body,#roos-root{height:100%;}
-body{margin:0;font-family:Inter,Segoe UI,Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text)}
+body{margin:0;font-family:Inter,Segoe UI,Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);background-image:url('../../documentation/Map%20OS.png');background-size:cover;background-position:center center}
 .desktop{display:flex;flex-direction:column;height:100vh}
 .topbar{display:flex;justify-content:space-between;align-items:center;padding:10px 16px;background:linear-gradient(90deg,var(--bg-accent),transparent);border-bottom:1px solid rgba(255,255,255,0.03)}
 .title{font-weight:600}
