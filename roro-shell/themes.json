@@ -3,8 +3,8 @@
   "dark": {
     "type": "dark",
     "vars": {
-      "--bg": "#0f1720",
-      "--bg-accent": "#0b1220",
+      "--bg": "#073C4A",
+      "--bg-accent": "#052F3B",
       "--text": "#e6eef8",
       "--muted": "#9fb0c8",
       "--accent": "#3b82f6"

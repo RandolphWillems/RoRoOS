@@ -1,6 +1,6 @@
 :root{
-  --bg: #0f1720;
-  --bg-accent: #0b1220;
+  --bg: #073C4A; /* main color requested */
+  --bg-accent: #052F3B; /* darker tone requested */
   --text: #e6eef8;
   --muted: #9fb0c8;
   --accent: #3b82f6;
