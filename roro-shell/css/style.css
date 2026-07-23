@@ -3,7 +3,7 @@
   --bg-accent: #052F3B; /* darker tone requested */
   --text: #e6eef8;
   --muted: #9fb0c8;
-  --accent: #3b82f6;
+  --accent: #F2C94C; /* yellow accent to match design */
 }
 
 *{box-sizing:border-box}
@@ -13,10 +13,12 @@ body{margin:0;font-family:Inter,Segoe UI,Arial,Helvetica,sans-serif;background:v
 .topbar{display:flex;justify-content:space-between;align-items:center;padding:10px 16px;background:linear-gradient(90deg,var(--bg-accent),transparent);border-bottom:1px solid rgba(255,255,255,0.03)}
 .title{font-weight:600}
 .controls button{padding:6px 10px;border-radius:6px;border:none;background:var(--accent);color:white;cursor:pointer}
-.icons{display:flex;gap:18px;padding:36px}
-.icon{width:88px;height:88px;background:rgba(255,255,255,0.02);border-radius:12px;display:flex;flex-direction:column;align-items:center;justify-content:center;cursor:pointer;transition:transform .12s ease}
-.icon span{margin-top:6px;font-size:13px;color:var(--muted)}
-.icon:hover{transform:translateY(-6px)}
+.icons{
+  position:fixed;left:16px;top:72px;display:flex;flex-direction:column;gap:12px;padding:8px;z-index:70
+}
+.icon{width:56px;height:56px;background:rgba(255,255,255,0.02);border-radius:12px;display:flex;flex-direction:column;align-items:center;justify-content:center;cursor:pointer;transition:transform .12s ease;border:2px solid transparent}
+.icon span{display:none}
+.icon:hover{transform:translateX(6px);border-color:var(--accent);box-shadow:0 6px 18px rgba(2,6,23,0.6)}
 .dock{position:fixed;left:50%;transform:translateX(-50%);bottom:18px;padding:8px 14px;background:rgba(0,0,0,0.35);border-radius:999px;color:var(--muted)}
 
 /* Start button and menu */
@@ -37,4 +39,11 @@ body{margin:0;font-family:Inter,Segoe UI,Arial,Helvetica,sans-serif;background:v
   --text: #0f1720;
   --muted: #475569;
   --accent: #2563eb;
+}
+
+/* Wallpaper preview: use design image from documentation as page background */
+body{
+  background-image: url('../../documentation/Map%20OS.png');
+  background-size: cover;
+  background-position: center center;
 }
