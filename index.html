@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>RoOS — Shell Prototype</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="roos-root" class="desktop">
+    <div class="topbar">
+      <div class="title">RoOS</div>
+      <div class="controls">
+        <button id="theme-toggle">Toggle Theme</button>
+      </div>
+    </div>
+
+    <div class="icons">
+      <div class="icon" data-app="terminal">🖥️<span>Terminal</span></div>
+      <div class="icon" data-app="files">📁<span>Files</span></div>
+      <div class="icon" data-app="browser">🌐<span>Browser</span></div>
+    </div>
+
+    <div id="dock" class="dock">Dock: (click an icon)</div>
+  </div>
+
+  <script src="js/shell.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "default": "dark",
+  "dark": {
+    "type": "dark",
+    "vars": {
+      "--bg": "#0f1720",
+      "--bg-accent": "#0b1220",
+      "--text": "#e6eef8",
+      "--muted": "#9fb0c8",
+      "--accent": "#3b82f6"
+    }
+  },
+  "light": {
+    "type": "light",
+    "vars": {
+      "--bg": "#f7fafc",
+      "--bg-accent": "#eef2f7",
+      "--text": "#0f1720",
+      "--muted": "#475569",
+      "--accent": "#2563eb"
+    }
+  }
+}
