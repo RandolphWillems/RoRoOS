@@ -54,5 +54,26 @@
     });
   });
 
+  // Start button / menu handling
+  const startButton = document.getElementById('start-button');
+  const startMenu = document.getElementById('start-menu');
+  if(startButton && startMenu){
+    startButton.addEventListener('click', (e)=>{
+      e.stopPropagation();
+      const open = startMenu.classList.toggle('open');
+      startMenu.setAttribute('aria-hidden', String(!open));
+    });
+
+    // close when clicking outside
+    document.addEventListener('click', (e)=>{
+      if(!startMenu.contains(e.target) && !startButton.contains(e.target)){
+        if(startMenu.classList.contains('open')){
+          startMenu.classList.remove('open');
+          startMenu.setAttribute('aria-hidden', 'true');
+        }
+      }
+    });
+  }
+
   loadThemes();
 })();

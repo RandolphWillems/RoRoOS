@@ -19,6 +19,17 @@ body{margin:0;font-family:Inter,Segoe UI,Arial,Helvetica,sans-serif;background:v
 .icon:hover{transform:translateY(-6px)}
 .dock{position:fixed;left:50%;transform:translateX(-50%);bottom:18px;padding:8px 14px;background:rgba(0,0,0,0.35);border-radius:999px;color:var(--muted)}
 
+/* Start button and menu */
+.start-wrapper{position:fixed;left:18px;bottom:18px;display:flex;flex-direction:column;align-items:flex-start;z-index:60}
+#start-button{width:56px;height:56px;border-radius:12px;border:none;padding:6px;background:linear-gradient(180deg,rgba(255,255,255,0.03),rgba(0,0,0,0.08));cursor:pointer;display:flex;align-items:center;justify-content:center}
+#start-button img{width:40px;height:40px;display:block}
+.start-menu{display:none;min-width:220px;background:var(--bg-accent);color:var(--text);border-radius:10px;padding:10px;margin-bottom:10px;box-shadow:0 8px 24px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.03)}
+.start-menu.open{display:block}
+.start-menu-header{font-weight:700;padding:4px 8px;border-bottom:1px solid rgba(255,255,255,0.02);margin-bottom:8px}
+.start-menu-list{list-style:none;padding:0;margin:0}
+.start-item{padding:8px;border-radius:6px;cursor:pointer}
+.start-item:hover{background:rgba(255,255,255,0.02)}
+
 /* Theme applied by JS via data-theme or CSS variables */
 :root[data-theme='light']{
   --bg: #f7fafc;
